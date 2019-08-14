@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+        }
+        .artboard{
+            height:667px;
+            width:375px;
+            background-image: url('IMG_0740.PNG');
+            background-size: cover;
+        }
+        .levelEffect{
+            position:absolute;
+            top:434px;
+            left:0px;
+            animation-duration: 5s;
+            animation-name: slidein;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+        .actEffect{
+            position:absolute;
+            top:354px;
+            left:0px;
+            animation-duration: 5s;
+            animation-name: slidein;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            width:184px;
+            height:80px;
+        }
+        @keyframes slidein {
+            0% {
+                 left:-359px;
+            }
+
+            20% {
+                left:0px;
+            }
+            80% {
+               opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+  }
+    </style>
+</head>
+<body>
+    <div class="artboard">
+    </div>
+    <img class="levelEffect" src="活動.png" alt="">
+    <img class="actEffect" src="大.png" alt="">
+</body>
+</html>
